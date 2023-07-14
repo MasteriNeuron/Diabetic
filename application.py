@@ -6,8 +6,8 @@ import pandas as pd
 application = Flask(__name__)
 app = application
 
-scaler = pickle.load(open('/config/workspace/Diabetes-Deployment/Model/StandardScaler.pkl','rb'))
-model = pickle.load(open('/config/workspace/Diabetes-Deployment/Model/modelforprediction','rb'))
+scaler = pickle.load(open('/config/workspace/Model/StandardScaler.pkl','rb'))
+model = pickle.load(open('/config/workspace/Model/modelforprediction','rb'))
 
 @app.route("/")
 def index():
